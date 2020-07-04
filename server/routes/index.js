@@ -1,20 +1,18 @@
-const path = require('path');
-const keystone = require('keystone');
 const cors = require('cors');
+const path = require('path');
 
-const Header = keystone.list('Header');
+const apiHeader = require('../views/Header');
 
-module.exports = (app) => {
-  app.use(cors());
+exports = module.exports = function (app) {
+	app.use(cors())
+	// página principal
+	app.get('/', function (req, res) {
+		res.sendFile.join(__dirname, '../public/index.html')
+	})
 
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-  });
-
-  app.get('/api/header', (req, res) => {
-    Header.model.find((err, items) => {
-      if (err) return res.apiError('database error', err);
-      res.send(items);
+	//envia os dados do banco
+	app.get('/api/header', apiHeader.getHeader)
+	app.get('*', (req, res) => {
+		res.redirect('/');
     });
-  });
-};
+}
