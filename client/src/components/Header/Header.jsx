@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import './Header.css';
+import '../General.css';
 
 function Header(){
     const [header, setHeader] = useState([]);

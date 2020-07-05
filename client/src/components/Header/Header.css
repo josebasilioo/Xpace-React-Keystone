@@ -6,8 +6,7 @@ header {
 }
 
 .logo {
-  margin-left: 2.18%;
-
-  width: 610px;
-  height: 148px;
+  margin-left: 2.2%;
+  max-width: 610px;
+  max-height: 148px;
 }
