@@ -21,7 +21,7 @@ function Info() {
             {info?.map(({ name, description, price, image}) => (
             <section>
                 <img className="food-img" src={image[0]?.url} alt={name}></img>
-                <div className="foodDetails">
+                <div className="food-details">
                     <h5>{name}</h5>
                     <p>{description}</p>
                     <h4>R${price}</h4>

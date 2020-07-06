@@ -8,15 +8,52 @@
     align-items: center;
 
     border-bottom: 1px solid #000000;
+
+    padding: 0% 5% 3.5% 5%;
 }
 
 .foodInfo section .food-img {
     width: 15%;
 }
 
-.foodInfo section .foodDetails {
-    max-width: 70%;
-    align-self: center;
+.food-details {
+    max-width: 500px;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+.foodInfo section .food-details p {
+    font-family: sans-serif;
+    font-style: Montserrat;
+    font-size: 25px;
+    font-weight: regular;
+
+    line-height: 27px;
+    letter-spacing: 0px;
+}
+
+.foodInfo section .food-details h4 {
+    font-family: sans-serif;
+    font-style: Montserrat;
+    font-size: 50px;
+    font-weight: semi-bold;
+
+    line-height: 73px;
+    letter-spacing: 0px;
+
+    color: #000000;
+}
+
+.foodInfo section .food-details h5 {
+    font-family: sans-serif;
+    font-style: Montserrat;
+    font-size: 32px;
+    font-weight: semi-bold;
+
+    line-height: 73px;
+    letter-spacing: 0px;
+
+    color: #000000;
 }
 
 .foodInfo .food-button {
@@ -33,24 +70,15 @@
     cursor: pointer;
 }
 
-.foodInfo section foodDetails p {
+.foodInfo .food-button a {
+    text-align: left;
+    text-decoration: none;
+
     font-family: sans-serif;
     font-style: Montserrat;
-    font-size: 25px;
-    font-weight: regular;
-
-    line-height: 37px;
+    font-size: 32px;
+    font-weight: Medium;
+    
     letter-spacing: 0px;
-}
-
-.foodInfo section foodDetails h4 {
-    font-family: sans-serif;
-    font-style: Montserrat;
-    font-size: 60px;
-    font-weight: semi-bold;
-
-    line-height: 73px;
-    letter-spacing: 0px;
-
-    color: #000000;
+    color: #FFFFFF;
 }
