@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import './Info.css';
 import '../General.css';
+import '../SearchBar/index';
 
 function Info() {
     const [info, setInfo] = useState([]);
@@ -27,7 +28,7 @@ function Info() {
                     <h4>R${price}</h4>
                 </div>
                 <button className="food-button">
-                    <a href="#" alt="Adicionar">Adicionar</a>
+                    <a alt="Adicionar">Adicionar</a>
                 </button>
             </section>   
             ))}
