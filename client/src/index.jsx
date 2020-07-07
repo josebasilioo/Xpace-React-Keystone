@@ -5,6 +5,7 @@ import {
   Header,
   Info,
   SearchBar,
+  Footer,
 } from './components';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <SearchBar />
       <Info />
+      <Footer />
     </section>
   );
 }
